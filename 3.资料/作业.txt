@@ -1,0 +1,41 @@
+创建年级，并随机添加 10 名学生；
+
+       for (var i = 1; i <= 10; i++) {
+           db.grade.insert({
+               "name": "zhangsan" + i,
+               "sex": Math.round(Math.random() * 10) % 2,
+               "age": Math.round(Math.random() * 6) + 3,
+               "hobby": []
+           });
+       }
+查看grade班级中的所有学生
+
+查看grade班级中所有年龄是 4 岁的学生
+
+查看grade班级中所有年龄大于 4 岁的学生
+
+查看grade班级中所有年龄大于 4 岁并且小于 7 岁的学生
+
+查看grade班级中所有年龄大于 4 岁并且性别值为0的学生
+
+查看grade班级中所有年龄小于 4 或者大于 7 岁的学生
+
+查看grade班级中所有年龄是 4 岁或 6 岁的学生
+
+查看grade班级中所有姓名带zhangsan1的学生
+
+查看grade班级中所有姓名带zhangsan1和zhangsan2的学生
+
+查看grade班级中所有兴趣爱好有三项的学生
+
+查看grade班级中所有兴趣爱好包括画画的学生
+
+查看grade班级中所有兴趣爱好既包括画画又包括跳舞的学生
+
+查看grade班级中所有兴趣爱好有三项的学生的学生数目
+
+查看grade班级的第二位学生
+
+查看grade班级的学生，按年纪升序
+
+查看grade班级的学生，按年纪降序
